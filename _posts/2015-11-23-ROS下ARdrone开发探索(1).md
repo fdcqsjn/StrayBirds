@@ -20,6 +20,7 @@ NT# rosrun ardrone_autonomy ardrone_driver
 
 **驱动更新速率**:可以设置为实时或者固定速率,由*realtime_navdata*参数决定,当它被设置为True时,驱动为实时速率模式(获得数据立刻就显示);当它被设置为Flase,为固定速率模式(数据先缓存,然后以固定速率发送,这个速率由*looprate*参数设置)
 此时启动驱动节点代码为:
+
 ```
 /默认设置
 # rosrun ardrone_autonomy ardrone_driver _realtime_navdata:=False _navdata_demo:=0
