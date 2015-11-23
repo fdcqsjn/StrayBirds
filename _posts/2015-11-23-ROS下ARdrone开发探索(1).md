@@ -225,7 +225,6 @@ tags_height: [345]
 tags_orientation: [140.84048461914062]
 tags_distance: [53.0]
 tm: 438659264.0
-
 ```
 具体参数的解释,参见[wiki](https://github.com/AutonomyLab/ardrone_autonomy/wiki/AR-Drone-Parameters)
 
