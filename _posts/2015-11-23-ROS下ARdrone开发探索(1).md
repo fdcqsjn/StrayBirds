@@ -38,6 +38,7 @@ NT# rosrun ardrone_autonomy ardrone_driver
 NT# rosrun ardrone_autonomy ardrone_driver _realtime_navdata:=True _navdata_demo:=1
 NT# rostopic echo /ardrone/navdata 
 ```
+
 获得数据格式为:
 
 ```
@@ -80,7 +81,7 @@ tags_height: []
 tags_orientation: []
 tags_distance: []
 tm: 128647368.0
----
+
 ```
 
 ####IMU数据
