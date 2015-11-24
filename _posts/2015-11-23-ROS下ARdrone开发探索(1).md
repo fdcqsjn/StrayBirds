@@ -39,6 +39,7 @@ NT# rosrun ardrone_autonomy ardrone_driver _realtime_navdata:=True _navdata_demo
 NT# rostopic echo /ardrone/navdata 
 ```
 获得数据格式为:
+
 ```
 header: 
   seq: 181
@@ -81,12 +82,16 @@ tags_distance: []
 tm: 128647368.0
 ---
 ```
+
 ####IMU数据
 使用命令:
+
 ```
 # rostopic echo /ardrone/imu
 ```
+
 获得的数据格式为:
+
 ```
 header: 
   seq: 1395
@@ -112,6 +117,7 @@ linear_acceleration:
 linear_acceleration_covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 ```
 使用rqt_plot 可视化数据:
+
 ```
 # rosrun rqt_plot rqt_plot /ardrone/imu/x
 ```
@@ -120,6 +126,7 @@ linear_acceleration_covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
 ####磁场数据
 使用命令:
+
 ```
 # rostopic echo /ardrone/mag
 ```
@@ -139,10 +146,12 @@ vector:
 
 ####里程数据
 使用命令:
+
 ```
 # rostopic echo /ardrone/mag
 ```
 获得的数据格式为:
+
 ```
 header: 
   seq: 337
@@ -175,6 +184,7 @@ twist:
       z: 0.0
   covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 ```
+
 ####单独选择一个数据发布到一个主题上
 通过编写launch文件,设置*enable_navdata_time=True* 能够单独开启一个命名为ardrone/navdata_time主题,并发布导航时间到这个主题上.具体能够使用那些数据,参见ardrone-sdk.
 
@@ -187,6 +197,7 @@ ardrone/bottom/image_raw
 使用可以使用image_view来查看三个图像
 其中采用**rosservice call /ardrone/togglecam**来在两个摄像头间切换
 例如:
+
 ```
 # rosrun image_view image_view image:=ardrone/image_raw
 # rosservice call /ardrone/togglecam
