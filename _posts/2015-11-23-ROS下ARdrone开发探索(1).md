@@ -224,10 +224,13 @@ tags_distance: []
 具体的标志图案如下
 ![Alt text](./special_tag.png)
 在使用命令:
+
 ```
 # roslaunch ardrone_autonomy ardrone.launch 
 ```
+
 注意到这里需要调整一些参数,所以使用了launch文件调整参数后启动.这是把刚才标志图案打印后放到飞行器下方,在navdate中就能观察到了标志物的信息和数据.
+
 ```
 # rostopic echo /ardrone/navdate
 tags_count: 1
@@ -240,6 +243,7 @@ tags_orientation: [140.84048461914062]
 tags_distance: [53.0]
 tm: 438659264.0
 ```
+
 具体参数的解释,参见[wiki](https://github.com/AutonomyLab/ardrone_autonomy/wiki/AR-Drone-Parameters)
 
 到此,ardrone第一步的安装和获取数据测试结束.
